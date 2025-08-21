@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culinary Impress — Rápidas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff0f6;
+      color: #4a2f25;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #b03070;
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      color: #b03070;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #b03070;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 280px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #b03070;
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 15px;
+      color: #000000;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Culinary Impress</div>
+    <div class="icons">
+      <span title="Favoritos">💗</span>
+      <span title="Ajuda">❓</span>
+    </div>
+  </header>
+
+  <main>
+    <h1>Rápidas</h1>
+    <div class="grid">
+
+      <div class="card">
+        <div>
+          <div class="card-title">Ovo Mexido com Tomate</div>
+          <img src="https://sabores-new.s3.amazonaws.com/public/2024/11/ovos-mexidos-especiais.jpg" alt="Ovo com Tomate">
+        </div>
+        <div class="card-desc">Pronto em 5 minutos, leve e nutritivo.</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Wrap de Frango</div>
+          <img src="https://blog.gsuplementos.com.br/wp-content/uploads/2024/04/iStock-164106969.jpg" alt="Wrap de Frango">
+        </div>
+        <div class="card-desc">Lanche rápido e saudável com vegetais.</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Sanduíche Natural</div>
+          <img src="https://assets.unileversolutions.com/recipes-v2/99461.jpg" alt="Sanduíche Natural">
+        </div>
+        <div class="card-desc">Simples, fresco e pronto em minutos.</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Banana com Aveia</div>
+          <img src="https://s2-receitas.glbimg.com/osgxQgoGW6dfIi4DzQ9DDy7noi4=/0x0:1280x856/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/L/2/hVWB2nQ3K2FE7r6HUkqg/mingau-de-banana-com-aveia.jpeg" alt="Banana com Aveia">
+        </div>
+        <div class="card-desc">Lanche doce e nutritivo instantâneo.</div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
