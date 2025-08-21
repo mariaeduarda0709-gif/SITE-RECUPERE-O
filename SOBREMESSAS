@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culinary Impress — Sobremesas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff0f6;
+      color: #4a2f25;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #b03070;
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      color: #b03070;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #b03070;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 280px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #b03070;
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 15px;
+      color: #000000;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Culinary Impress</div>
+    <div class="icons">
+      <span title="Favoritos">💗</span>
+      <span title="Ajuda">❓</span>
+    </div>
+  </header>
+
+  <main>
+    <h1>Sobremesas</h1>
+    <div class="grid">
+
+      <div class="card">
+        <div>
+          <div class="card-title">Brigadeiro</div>
+          <img src="https://static.itdg.com.br/images/360-240/a373f494abb2c3360b9966f5abe130e2/brigadeiro-.jpg" alt="Brigadeiro">
+        </div>
+        <div class="card-desc">Sobremesa</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Pudim</div>
+          <img src="https://irp.cdn-website.com/33406c6e/dms3rep/multi/pudim-min-3f2f6769.jpg" alt="Pudim">
+        </div>
+        <div class="card-desc">Sobremesa</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Torta de Morango</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4BjhXxqujxVgbRd9so8PbDPAY4x41H6AFTTsEkNnbQbhaj0fKujT5qWnuRTmOuZxItkc&usqp=CAU" alt="Torta de Morango">
+        </div>
+        <div class="card-desc">Sobremesa</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">Brownie</div>
+          <img src="https://static.itdg.com.br/images/1200-630/0191a4f23349e54e618a65f2051d68a8/shutterstock-1915577575-2-.jpg" alt="Brownie">
+        </div>
+        <div class="card-desc">Sobremesa</div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
