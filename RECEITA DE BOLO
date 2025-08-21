@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bolo de Chocolate — Culinary Impress</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff0f6;
+      color: #4a2f25;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #d63384;
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      color: #b03070; 
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .recipe-card {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      max-width: 1100px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .recipe-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .recipe-title {
+      font-size: 32px;
+      color: #d63384;
+      font-weight: 700;
+    }
+
+    .recipe-description {
+      font-size: 16px;
+      color: #5a4338;
+      line-height: 1.6;
+    }
+
+    .recipe-button {
+      background-color: #d63384;
+      color: white;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      width: fit-content;
+      text-align: center;
+    }
+
+    .recipe-button:hover {
+      background-color: #b03070;
+    }
+
+    .recipe-image-container {
+      flex-shrink: 0;
+    }
+
+    .recipe-image {
+      width: 360px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(176, 48, 112, 0.3);
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      .recipe-card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .recipe-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      .recipe-title {
+        text-align: center;
+      }
+
+      .recipe-content {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Culinary Impress</div>
+    <div class="icons" aria-label="Ícones do topo">
+      <span title="Favoritos">💗</span>
+      <span title="Ajuda">❓</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="recipe-card">
+      <div class="recipe-content">
+        <h1 class="recipe-title">Bolo de Chocolate</h1>
+        <p class="recipe-description">
+          Um bolo de chocolate bem macio, coberto com uma generosa camada de ganache. Ideal para aniversários ou para quem ama um doce clássico e delicioso.
+        </p>
+        <p class="recipe-description">
+          <strong>Ingredientes:</strong><br>
+          - 3 ovos<br>
+          - 1 xícara de açúcar<br>
+          - 1/2 xícara de óleo<br>
+          - 1 xícara de leite<br>
+          - 1 xícara de chocolate em pó<br>
+          - 2 xícaras de farinha de trigo<br>
+          - 1 colher (sopa) de fermento em pó
+        </p>
+        <p class="recipe-description">
+          <strong>Modo de preparo:</strong><br>
+          Bata os ovos com o açúcar, junte o óleo e o leite. Adicione o chocolate em pó e a farinha aos poucos. Por fim, misture o fermento. Leve ao forno a 180°C por 35 minutos. Finalize com ganache por cima.
+        </p>
+
+        <button class="recipe-button" onclick="history.back()">Voltar para Receitas</button>
+      </div>
+
+      <div class="recipe-image-container">
+        <img src="https://static.itdg.com.br/images/360-240/d30f2550068bdd64e089ff3e819938e5/100208-122765-original.jpg" alt="Bolo de Chocolate" class="recipe-image" />
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
